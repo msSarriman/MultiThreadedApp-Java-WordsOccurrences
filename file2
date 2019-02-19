@@ -1,0 +1,6 @@
+Then you need to make sure you are not calling join() in the swing thread.
+You can do this by creating one thread that is in charge of your download thread.
+This is essentially just a background worker that you can forget about.
+It is the worker thread that knows when the download finishes and what
+to do at that point. You just need to make sure edits to the swing objects
+are done in the swing thread.

@@ -1,0 +1,6 @@
+Write a multi-threaded application in Java 7 or 8.
+You’re given 2 text files on local filesystem, each contains a piece of text in English, maximum
+500 words long. The files are encoded in UTF-8.
+Two threads simultaneously read each its own file and populate a shared cache. When they
+finish, a separate thread traverses the cache and prints out the following stats for each word,
+one line per word:
